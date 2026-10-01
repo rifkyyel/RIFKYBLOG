@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BasketZone - Blog Olahraga Bola Basket</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef5ff;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #005bea, #00c6fb);
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #003b8e;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #8fd3ff;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 35px auto;
+        }
+
+        .welcome {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .welcome h2 {
+            color: #005bea;
+            margin-bottom: 10px;
+        }
+
+        /* POSTING */
+        .post {
+            background: white;
+            margin-bottom: 35px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .post img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .post-content {
+            padding: 25px;
+        }
+
+        .post h2 {
+            color: #005bea;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .date {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .label {
+            display: inline-block;
+            background: #005bea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .post p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        /* QUOTE */
+        .quote {
+            background: #e5f1ff;
+            border-left: 5px solid #005bea;
+            padding: 15px;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        /* INFO SECTION */
+        .info-section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .info-section h2 {
+            color: #005bea;
+            margin-bottom: 15px;
+        }
+
+        .info-section h3 {
+            color: #003b8e;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        /* KOMENTAR */
+        .comment-box {
+            background: #fff0f0;
+            border: 2px solid red;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 25px;
+        }
+
+        .comment-box h3 {
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        .comment-box p {
+            color: #b00000;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #003b8e;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .post img {
+                height: 230px;
+            }
+
+            .post h2 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🏀 BasketZone</h1>
+        <p>Blog Informasi dan Inspirasi Seputar Olahraga Bola Basket</p>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#artikel">Artikel</a>
+        <a href="#manfaat">Manfaat</a>
+        <a href="#bisnis">Bisnis</a>
+        <a href="#komentar">Komentar</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- WELCOME -->
+        <section class="welcome" id="home">
+            <h2>Selamat Datang di BasketZone 🏀</h2>
+
+            <p>
+                BasketZone adalah blog yang membahas berbagai informasi menarik
+                mengenai olahraga bola basket. Blog ini berisi artikel tentang
+                teknik dasar, manfaat olahraga basket, perkembangan basket,
+                hingga tips untuk pemain pemula.
+            </p>
+
+            <p>
+                Blog ini dibuat sebagai media informasi dan tempat berbagi
+                pengetahuan bagi siapa saja yang tertarik dengan olahraga
+                bola basket.
+            </p>
+        </section>
+
+
+        <!-- ARTIKEL 1 -->
+        <section id="artikel">
+
+            <article class="post">
+
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80"
+                     alt="Pemain bola basket">
+
+                <div class="post-content">
+
+                    <span class="label">Teknik Basket</span>
+
+                    <h2>Teknik Dasar Bola Basket yang Wajib Dikuasai Pemula</h2>
+
+                    <div class="date">
+                        📅 1 Oktober 2026 | ✍️ BasketZone
+                    </div>
+
+                    <p>
+                        Bola basket merupakan olahraga yang membutuhkan kerja sama,
+                        kecepatan, ketepatan, dan kemampuan mengontrol bola.
+                        Bagi pemain pemula, memahami teknik dasar merupakan langkah
+                        penting sebelum mempelajari strategi permainan yang lebih kompleks.
+                    </p>
+
+                    <p>
+                        Beberapa teknik dasar yang perlu dikuasai antara lain
+                        dribbling, passing, shooting, dan lay-up. Dribbling digunakan
+                        untuk membawa bola sambil bergerak, sedangkan passing digunakan
+                        untuk memberikan bola kepada rekan satu tim.
+                    </p>
+
+                    <p>
+                        Selain itu, shooting menjadi salah satu kemampuan penting
+                        karena digunakan untuk mencetak angka. Pemain juga perlu
+                        melatih lay-up agar dapat melakukan tembakan dari jarak dekat
+                        dengan lebih efektif.
+                    </p>
+
+                    <div class="quote">
+                        💡 Ide menarik: Latih satu teknik dasar setiap hari agar
+                        kemampuan bermain basket berkembang secara bertahap.
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- ARTIKEL 2 -->
+            <article class="post">
+
+                <img src="https://images.unsplash.com/photo-1518407613690-d9fc990e795f?auto=format&fit=crop&w=1200&q=80"
+                     alt="Pertandingan bola basket">
+
+                <div class="post-content">
+
+                    <span class="label">Manfaat Basket</span>
+
+                    <h2>Manfaat Bermain Bola Basket bagi Kesehatan</h2>
+
+                    <div class="date">
+                        📅 1 Oktober 2026 | ✍️ BasketZone
+                    </div>
+
+                    <p>
+                        Bermain bola basket bukan hanya menyenangkan, tetapi juga
+                        memberikan berbagai manfaat bagi kesehatan tubuh. Aktivitas
+                        seperti berlari, melompat, dan bergerak cepat membuat tubuh
+                        menjadi lebih aktif.
+                    </p>
+
+                    <p>
+                        Olahraga basket dapat membantu meningkatkan kebugaran,
+                        koordinasi tubuh, keseimbangan, serta daya tahan fisik.
+                        Permainan yang dilakukan secara rutin juga dapat membantu
+                        seseorang menjalani gaya hidup yang lebih aktif.
+                    </p>
+
+                    <p>
+                        Selain manfaat fisik, basket juga dapat membantu melatih
+                        kemampuan bekerja sama. Dalam permainan tim, setiap pemain
+                        harus berkomunikasi dan memahami peran masing-masing.
+                    </p>
+
+                    <div class="quote">
+                        💡 Ide menarik: Bermain basket bersama teman dapat menjadi
+                        cara yang menyenangkan untuk berolahraga sekaligus membangun
+                        kerja sama tim.
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- ARTIKEL 3 -->
+            <article class="post">
+
+                <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=1200&q=80"
+                     alt="Bola basket di lapangan">
+
+                <div class="post-content">
+
+                    <span class="label">Tips Pemain</span>
+
+                    <h2>Tips Meningkatkan Kemampuan Bermain Basket</h2>
+
+                    <div class="date">
+                        📅 1 Oktober 2026 | ✍️ BasketZone
+                    </div>
+
+                    <p>
+                        Meningkatkan kemampuan bermain basket membutuhkan latihan
+                        yang konsisten. Pemain tidak harus langsung melakukan latihan
+                        berat, tetapi dapat memulai dengan latihan sederhana secara rutin.
+                    </p>
+
+                    <p>
+                        Salah satu cara yang dapat dilakukan adalah membuat jadwal
+                        latihan. Pemain dapat membagi latihan menjadi beberapa bagian,
+                        seperti dribbling, passing, shooting, dan latihan fisik.
+                    </p>
+
+                    <p>
+                        Selain latihan individu, bermain bersama tim juga penting.
+                        Melalui permainan bersama, pemain dapat belajar membaca situasi,
+                        berkomunikasi, serta memahami strategi permainan.
+                    </p>
+
+                    <div class="quote">
+                        💡 Ide menarik: Buat target latihan mingguan dan catat
+                        perkembangan kemampuanmu dari waktu ke waktu.
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- ARTIKEL 4 -->
+            <article class="post">
+
+                <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&w=1200&q=80"
+                     alt="Lapangan bola basket">
+
+                <div class="post-content">
+
+                    <span class="label">Basket dan Generasi Muda</span>
+
+                    <h2>Basket sebagai Olahraga yang Menarik bagi Generasi Muda</h2>
+
+                    <div class="date">
+                        📅 1 Oktober 2026 | ✍️ BasketZone
+                    </div>
+
+                    <p>
+                        Bola basket menjadi salah satu olahraga yang banyak diminati
+                        oleh generasi muda. Permainan yang cepat dan dinamis membuat
+                        basket menarik untuk dimainkan maupun ditonton.
+                    </p>
+
+                    <p>
+                        Kegiatan basket juga dapat menjadi sarana bagi anak muda
+                        untuk mengembangkan kedisiplinan, kerja sama, tanggung jawab,
+                        dan sportivitas.
+                    </p>
+
+                    <p>
+                        Dengan adanya komunitas dan kompetisi basket, pemain muda
+                        memiliki kesempatan untuk mengembangkan kemampuan sekaligus
+                        mendapatkan pengalaman baru.
+                    </p>
+
+                    <div class="quote">
+                        💡 Ide menarik: Sekolah dan komunitas dapat membuat kegiatan
+                        basket rutin untuk meningkatkan minat generasi muda terhadap olahraga.
+                    </div>
+
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- MANFAAT BLOG -->
+        <section class="info-section" id="manfaat">
+
+            <h2>1. Manfaat Blog bagi Olahraga Bola Basket</h2>
+
+            <p>
+                Blog dapat menjadi media untuk menyebarkan informasi mengenai
+                olahraga bola basket kepada masyarakat. Melalui artikel, pembaca
+                dapat memperoleh pengetahuan tentang teknik bermain, latihan,
+                manfaat olahraga, serta perkembangan dunia basket.
+            </p>
+
+            <p>
+                Selain itu, blog dapat membantu memperkenalkan kegiatan basket,
+                komunitas, turnamen, maupun pemain kepada masyarakat yang lebih luas.
+                Blog juga dapat menjadi tempat berbagi pengalaman dan tips bagi
+                pemain basket pemula maupun penggemar olahraga.
+            </p>
+
+        </section>
+
+
+        <!-- BISNIS -->
+        <section class="info-section" id="bisnis">
+
+            <h2>2. Fitur Blogger yang Bisa Digunakan untuk Bisnis</h2>
+
+            <p>
+                Blog dapat dimanfaatkan sebagai media untuk mendukung kegiatan bisnis.
+                Beberapa fitur Blogger yang dapat digunakan antara lain:
+            </p>
+
+            <h3>📝 Postingan</h3>
+            <p>
+                Digunakan untuk membuat artikel, promosi produk, informasi layanan,
+                atau konten yang berkaitan dengan bisnis.
+            </p>
+
+            <h3>🏷️ Label</h3>
+            <p>
+                Membantu mengelompokkan artikel berdasarkan kategori sehingga
+                pengunjung lebih mudah menemukan informasi yang mereka cari.
+            </p>
+
+            <h3>🖼️ Gambar dan Video</h3>
+            <p>
+                Gambar dan video dapat membuat konten promosi menjadi lebih menarik
+                dan membantu memperkenalkan produk atau layanan.
+            </p>
+
+            <h3>💬 Komentar</h3>
+            <p>
+                Fitur komentar dapat digunakan untuk menerima pertanyaan,
+                tanggapan, dan masukan dari pengunjung blog.
+            </p>
+
+            <h3>📊 Statistik</h3>
+            <p>
+                Statistik dapat membantu pemilik blog mengetahui perkembangan
+                jumlah pengunjung dan performa konten yang dibuat.
+            </p>
+
+        </section>
+
+
+        <!-- KOMENTAR -->
+        <section class="info-section" id="komentar">
+
+            <h2>3. Keterangan Fitur Komentar</h2>
+
+            <div class="comment-box">
+
+                <h3>🔴 BLOG INI SUDAH MENYEDIAKAN KOMENTAR</h3>
+
+                <p>
+                    Pengunjung dapat memberikan komentar, pendapat, pertanyaan,
+                    maupun saran terhadap artikel yang tersedia di blog.
+                    Fitur komentar dapat menjadi sarana interaksi antara
+                    pemilik blog dengan pembaca.
+                </p>
+
+                <p>
+                    <strong>
+                        Silakan gunakan kolom komentar untuk memberikan
+                        tanggapan terhadap artikel BasketZone.
+                    </strong>
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🏀 BasketZone</h3>
+
+        <p>
+            Blog Informasi dan Inspirasi Seputar Bola Basket
+        </p>
+
+        <p>
+            © 2026 BasketZone | Dibuat untuk Project UTS
+        </p>
+
+    </footer>
+
+</body>
+</html>
